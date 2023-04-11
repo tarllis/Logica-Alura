@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br><hr><br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+//function calculaImc(x , y) {
+
+    //var imc = peso / (altura * altura);
+    
+//}
+
+var pesoTarllis = 86;
+var pesoLarysse = 60;   
+var alturaTarllis = 1.70;
+var alturaLarysse = 1.66;
+var imcTarllis = pesoTarllis / (alturaTarllis * alturaTarllis);
+var imcLarysse = pesoLarysse / (alturaLarysse * alturaLarysse);
+mostra("O IMC de Tarllis é: " + imcTarllis);
+mostra("O IMC de Larysse é: " + imcLarysse);
+
+</script>

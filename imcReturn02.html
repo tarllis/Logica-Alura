@@ -1,0 +1,24 @@
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+    
+    }
+    var imcTarllis = calculaImc(1.70, 86);
+    var imcLarysse = calculaImc(1.66, 60);
+    var totalImc = imcTarllis + imcLarysse;
+    mostra("O IMC de Tarllis é: " + imcTarllis);
+    mostra("O IMC de Larysse é: " + imcLarysse);
+    mostra("A soma dos imcs é: " + totalImc);
+
+</script>
