@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var numeroPensado = Math.round(Math.random() * 10);
+var chute = parseInt(prompt("Informe o seu chute: "));
+var tentativas = 1;
+
+if (chute == numeroPensado) {
+
+    mostra("Você acertou na primeira tentativa!");
+}
+
+if(chute != numeroPensado) {
+
+    while(chute != numeroPensado) {
+
+        tentativas = tentativas + 1;
+        chute = parseInt(prompt("Você errou! Informe o seu chute: "));
+
+    }
+
+    mostra("Você acertou! O número de tentativas foi: " + tentativas);
+
+}
+
+</script>
